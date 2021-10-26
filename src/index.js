@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.scss';
 import firebase from 'firebase/app';
 import Initialize from './Initialize';
 import reportWebVitals from './reportWebVitals';
-import firebaseConfig from '..api/apiKeys';
+import firebaseConfig from './api/apiKeys';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

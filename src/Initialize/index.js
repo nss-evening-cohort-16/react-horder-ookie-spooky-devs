@@ -16,7 +16,6 @@ function Initialize() {
         setUser(userInfoObj);
       } else if (user || user === null) {
         setUser(false);
-
       }
     });
   }, []);
@@ -28,7 +27,7 @@ function Initialize() {
       ) : (
         <SignIn />
       )}
-    </div>  
+    </div>
   );
 }
 
