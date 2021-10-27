@@ -13,7 +13,7 @@ function Initialize() {
       if (authed) {
         const userInfoObj = {
           fullName: authed.displayName,
-          uid: authed.photoURL,
+          uid: authed.uid,
         };
         setUser(userInfoObj);
       } else if (user || user === null) {
@@ -28,7 +28,6 @@ function Initialize() {
         <>
           <Navigation />
           <Routes />
-          <h1>You are signed in</h1>
         </>
       ) : (
         <SignIn />
