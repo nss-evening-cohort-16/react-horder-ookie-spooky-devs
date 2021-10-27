@@ -3,6 +3,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import SignIn from '../views/SignIn';
 import Navigation from '../components/Navigation';
+import Routes from '../routes';
 
 function Initialize() {
   const [user, setUser] = useState(null);
@@ -26,6 +27,7 @@ function Initialize() {
       {user ? (
         <>
           <Navigation />
+          <Routes />
           <h1>You are signed in</h1>
         </>
       ) : (
