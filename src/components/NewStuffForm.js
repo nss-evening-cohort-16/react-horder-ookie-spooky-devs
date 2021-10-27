@@ -44,7 +44,7 @@ export default function NewStuffForm({ obj }) {
     if (obj) {
       createStuff({ ...formInput }).then(() => {
         resetForm();
-        history.push('/stuffs');
+        history.push('/stuff');
       });
     }
   };
