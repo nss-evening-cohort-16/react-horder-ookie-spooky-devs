@@ -8,7 +8,7 @@ export default function Card({ card }) {
 
   const handleDelete = (method) => {
     if (method === 'delete') {
-      deleteStuff(card.firebaseKey).then(() => getStuff().then(history.push('/')));
+      deleteStuff(card.firebaseKey).then(() => getStuff().then(history.push('/stuff')));
     }
   };
 
