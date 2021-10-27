@@ -16,9 +16,10 @@ export default function NewStuffForm({ obj }) {
   const history = useHistory();
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormInput((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   };
 
