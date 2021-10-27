@@ -21,7 +21,7 @@ export default function Card({ card }) {
           <Link to={`/edit/${card.firebaseKey}`} className="btn btn-warning">
             Edit
           </Link>
-          <Link to={`/stuff/${card.firebaseKey}`} className="btn btn-warning">
+          <Link to={`/stuff/${card.firebaseKey}`} className="btn btn-success">
             Single
           </Link>
           <button

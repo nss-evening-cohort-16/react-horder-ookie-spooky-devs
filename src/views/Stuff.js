@@ -7,7 +7,7 @@ export default function Stuff() {
 
   useEffect(() => {
     getStuff().then(setCards);
-  });
+  }, []);
 
   return (
     <div className="d-flex flex-wrap">
