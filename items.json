@@ -31,14 +31,6 @@
     "itemName" : "Magnetic Levitating Light",
     "uid" : "56789"
   },
-  "item13" : {
-    "favoriteItem" : "",
-    "firebaseKey" : "item13",
-    "itemDescription" : "Perfect the dog selfie with this squeaking tennis-ball attachment that helps keep your pup focused on the camera — and also comes very well reviewed.",
-    "itemImage" : "https://pixel.nymag.com/imgs/daily/strategist/2018/01/03/reddit/12.w540.h356.2x.jpg",
-    "itemName" : "Pooch Selfie",
-    "uid" : "56789"
-  },
   "item14" : {
     "favoriteItem" : "",
     "firebaseKey" : "item14",
@@ -103,14 +95,6 @@
     "itemName" : "HoodiePillow Inflatable Travel Pillow",
     "uid" : "12345"
   },
-  "item21" : {
-    "favoriteItem" : "",
-    "firebaseKey" : "item21",
-    "itemDescription" : "This lovely star throne will help you spark your imagination as you daydream about getting more stuff.",
-    "itemImage" : "http://devilstix.com/wp-content/uploads/2017/05/awesome-bean-bag-chairs-ikea-ikea-kitchen-blue-star-patterned-fabric-for-teens-and-kids-walpaper.jpg",
-    "itemName" : "Starry Bean Bag Chair",
-    "uid" : "12345"
-  },
   "item22" : {
     "favoriteItem" : "",
     "firebaseKey" : "item22",
@@ -165,14 +149,6 @@
     "itemDescription" : "These are the largest googly eyes I own, and I own a lot of googly eyes. I challenge you to find larger googly eyes than this. I have secured my googly eyes to my bar using velcro stickers. If I want to relocate the googly eyes, I can simply apply the business end of a velcro sticker to wherever I want my googly eyes, and then BOOM, Googly City!",
     "itemImage" : "https://images-na.ssl-images-amazon.com/images/I/71Cuq15r-LL._SL1500_.jpg",
     "itemName" : "Giant Googly Eyes",
-    "uid" : "12345"
-  },
-  "item29" : {
-    "favoriteItem" : "",
-    "firebaseKey" : "item29",
-    "itemDescription" : "Toilet paper roll has a glow-in-the-dark coating. Novelty item, not intended for “actual” use. If used your rear may glow.",
-    "itemImage" : "https://removeandreplace.com/wp-content/uploads/2013/05/Glow-in-the-dark-toilet-paper.jpg",
-    "itemName" : "Glow in the Dark Toilet Paper",
     "uid" : "12345"
   },
   "item3" : {
