@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Home() {
+export default function Home({ uid }) {
+  console.warn('home', uid);
   return (
     // Add favorites stuff to home page
     <div>
@@ -8,3 +10,7 @@ export default function Home() {
     </div>
   );
 }
+
+Home.propTypes = {
+  uid: PropTypes.string.isRequired,
+};
