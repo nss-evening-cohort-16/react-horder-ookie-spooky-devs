@@ -82,7 +82,7 @@ export default function NewStuffForm({ obj }) {
           placeholder="Item Description"
         />
         <button type="submit" className="btn btn-success">
-          Create
+          {obj.firebaseKey ? 'Edit' : 'Create'}
         </button>
       </form>
     </>
