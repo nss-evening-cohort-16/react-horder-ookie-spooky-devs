@@ -41,12 +41,10 @@ export default function NewStuffForm({ obj }) {
 
     if (obj.firebaseKey) {
       updateStuff(obj.firebaseKey, formInput).then(() => {
-        console.warn(obj.firebaseKey);
         resetForm();
         history.push('/stuff');
       });
     } else {
-      console.warn('Not FirebaseKey');
       createStuff(formInput).then(() => {
         resetForm();
         history.push('/stuff');
