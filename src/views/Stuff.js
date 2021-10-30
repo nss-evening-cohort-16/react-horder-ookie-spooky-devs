@@ -5,7 +5,6 @@ import { getStuff } from '../api/data/stuffData';
 
 export default function Stuff({ uid }) {
   const [cards, setCards] = useState([]);
-  console.warn('Stuff View', uid);
 
   useEffect(() => {
     getStuff(uid).then(setCards);
