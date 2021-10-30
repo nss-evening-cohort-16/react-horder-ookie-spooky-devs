@@ -38,6 +38,15 @@ const updateStuff = (firebaseKey, updateObj) => new Promise((resolve, reject) =>
     .catch(reject);
 });
 
+const getSingleStuff = (firebaseKey) => new Promise((resolve, reject) => {
+  axios
+    .get(`${baseURL}/items/${firebaseKey}.json`)
+    .then((response) => {
+      resolve(response.data);
+    })
+    .catch(reject);
+});
+
 export {
-  getStuff, createStuff, deleteStuff, updateStuff,
+  getStuff, createStuff, deleteStuff, updateStuff, getSingleStuff,
 };

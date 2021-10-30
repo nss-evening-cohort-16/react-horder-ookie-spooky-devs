@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { createStuff, updateStuff } from '../api/data/stuffData';
+import { useHistory, useParams } from 'react-router-dom';
+import { getSingleStuff, updateStuff } from '../api/data/stuffData';
 
 const initialState = {
   itemName: '',
@@ -11,28 +11,15 @@ const initialState = {
   favoriteItem: false,
 };
 
-export default function NewStuffForm({ obj }) {
+export default function EditStuffForm({ obj }) {
   const [formInput, setFormInput] = useState(initialState);
+  const [setEditItem] = useState({});
   const history = useHistory();
-
-  // useEffect(() => {
-  //   if (obj.firebaseKey) {
-  //     setFormInput({
-  //       itemName: obj.itemName,
-  //       itemImage: obj.itemImage,
-  //       itemDescription: obj.itemDescription,
-  //       uid: obj.uid,
-  //       favoriteItem: obj.favoriteItem,
-  //       firebaseKey: obj.firebaseKey,
-  //     });
-  //   }
-  // }, [obj]);
+  const { key } = useParams();
 
   useEffect(() => {
     if (obj.firebaseKey) {
-      setFormInput(obj);
-    } else {
-      setFormInput(initialState);
+      getSingleStuff(key).then(setEditItem);
     }
   }, [obj]);
 
@@ -45,41 +32,17 @@ export default function NewStuffForm({ obj }) {
     }));
   };
 
-  const resetForm = () => {
-    setFormInput(initialState);
-  };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (obj) {
-  //     createStuff({ ...formInput }).then(() => {
-  //       resetForm();
-  //       history.push('/stuff');
-  //     });
-  //   }
-  // };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (obj.firebaseKey) {
-      updateStuff(obj.firebaseKey, formInput).then(() => {
-        console.warn(obj.firebaseKey);
-        resetForm();
-        history.push('/stuff');
-      });
-    } else {
-      console.warn('Not FirebaseKey');
-      createStuff(formInput).then(() => {
-        resetForm();
-        history.push('/stuff');
-      });
-    }
+    updateStuff(obj.firebaseKey, formInput).then(() => {
+      history.push('/stuff');
+    });
   };
 
   return (
     <>
-      {/* <h1>Create Stuffs</h1> */}
+      {/* <h1>Update Your Stuff</h1> */}
       <form onSubmit={handleSubmit}>
         <input
           id="itemName"
@@ -113,10 +76,10 @@ export default function NewStuffForm({ obj }) {
   );
 }
 
-NewStuffForm.propTypes = {
+EditStuffForm.propTypes = {
   obj: PropTypes.shape(PropTypes.obj),
 };
 
-NewStuffForm.defaultProps = {
+EditStuffForm.defaultProps = {
   obj: {},
 };
