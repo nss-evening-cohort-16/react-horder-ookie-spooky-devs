@@ -1,11 +1,8 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-// import EditStuffForm from '../components/EditStuffForm';
-// import NewStuffForm from '../components/NewStuffForm';
 import Home from '../views/Home';
 import New from '../views/New';
 import Edit from '../views/Edit';
-// import New from '../views/New';
 
 import Stuff from '../views/Stuff';
 

@@ -15,19 +15,6 @@ export default function NewStuffForm({ obj }) {
   const [formInput, setFormInput] = useState(initialState);
   const history = useHistory();
 
-  // useEffect(() => {
-  //   if (obj.firebaseKey) {
-  //     setFormInput({
-  //       itemName: obj.itemName,
-  //       itemImage: obj.itemImage,
-  //       itemDescription: obj.itemDescription,
-  //       uid: obj.uid,
-  //       favoriteItem: obj.favoriteItem,
-  //       firebaseKey: obj.firebaseKey,
-  //     });
-  //   }
-  // }, [obj]);
-
   useEffect(() => {
     if (obj.firebaseKey) {
       setFormInput(obj);
@@ -49,16 +36,6 @@ export default function NewStuffForm({ obj }) {
     setFormInput(initialState);
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (obj) {
-  //     createStuff({ ...formInput }).then(() => {
-  //       resetForm();
-  //       history.push('/stuff');
-  //     });
-  //   }
-  // };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -79,7 +56,6 @@ export default function NewStuffForm({ obj }) {
 
   return (
     <>
-      {/* <h1>Create Stuffs</h1> */}
       <form onSubmit={handleSubmit}>
         <input
           id="itemName"
