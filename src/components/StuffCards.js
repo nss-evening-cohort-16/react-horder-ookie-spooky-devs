@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { deleteStuff } from '../api/data/stuffData';
+import { deleteStuff, getStuff } from '../api/data/stuffData';
 
-export default function Card({ card, setCards }) {
+export default function Card({ card, setCards, uid }) {
   const handleDelete = (method) => {
     if (method === 'delete') {
-      deleteStuff(card.firebaseKey).then(setCards);
+      deleteStuff(card.firebaseKey).then(() => {
+        getStuff(uid).then(setCards);
+      });
     }
   };
 
@@ -38,4 +40,5 @@ export default function Card({ card, setCards }) {
 Card.propTypes = {
   card: PropTypes.shape(PropTypes.obj).isRequired,
   setCards: PropTypes.func.isRequired,
+  uid: PropTypes.string.isRequired,
 };
