@@ -9,15 +9,14 @@ import SingleStuffView from '../views/SingleStuff';
 import Stuff from '../views/Stuff';
 
 export default function Routes({ uid }) {
-  console.warn('Routes', uid);
   return (
     <>
       <Switch>
-        <Route exact path="/" uid={uid} component={Home} />
-        <Route exact path="/new" uid={uid} component={New} />
+        <Route exact path="/" component={() => <Home uid={uid} />} />
+        <Route exact path="/new" component={() => <New uid={uid} />} />
         <Route exact path="/stuff" component={() => <Stuff uid={uid} />} />
-        <Route exact path="/edit/:key" uid={uid} component={Edit} />
-        <Route exact path="/stuff/:key" uid={uid} component={SingleStuffView} />
+        <Route exact path="/edit/:key" component={() => <Edit uid={uid} />} />
+        <Route exact path="/stuff/:key" component={SingleStuffView} />
       </Switch>
     </>
   );

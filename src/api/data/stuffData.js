@@ -8,7 +8,6 @@ const getStuff = (uid) => new Promise((resolve, reject) => {
     .get(`${baseURL}/items.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => resolve(Object.values(response.data)))
     .catch(reject);
-  console.warn('getstuff', uid);
 });
 
 const createStuff = (obj) => new Promise((resolve, reject) => {
