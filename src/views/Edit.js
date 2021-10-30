@@ -14,7 +14,7 @@ export default function Edit() {
 
   return (
     <>
-      <h1>Edit Stuff</h1>
+      <h1>Edit Stuff for {editItem.itemName}</h1>
       <NewStuffForm obj={editItem} />
     </>
   );
