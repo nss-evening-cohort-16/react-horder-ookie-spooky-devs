@@ -3,11 +3,12 @@ import firebaseConfig from '../apiKeys';
 
 const baseURL = firebaseConfig.databaseURL;
 
-const getStuff = (userId) => new Promise((resolve, reject) => {
+const getStuff = (uid) => new Promise((resolve, reject) => {
   axios
-    .get(`${baseURL}/items.json?orderBy="uid"&equalTo="${userId}"`)
+    .get(`${baseURL}/items.json?orderBy="uid"&equalTo="${uid}"`)
     .then((response) => resolve(Object.values(response.data)))
     .catch(reject);
+  console.warn('getstuff', uid);
 });
 
 const createStuff = (obj) => new Promise((resolve, reject) => {
