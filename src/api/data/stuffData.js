@@ -10,7 +10,7 @@ const getStuff = (uid) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const createStuff = (obj) => new Promise((resolve, reject) => {
+const createStuff = (obj, uid) => new Promise((resolve, reject) => {
   axios
     .post(`${baseURL}/items.json`, obj)
     .then((response) => {
@@ -18,23 +18,23 @@ const createStuff = (obj) => new Promise((resolve, reject) => {
       axios
         .patch(`${baseURL}/items/${firebaseKey}.json`, { firebaseKey })
         .then(() => {
-          getStuff().then(resolve);
+          getStuff(uid).then(resolve);
         });
     })
     .catch(reject);
 });
 
-const deleteStuff = (firebaseKey) => new Promise((resolve, reject) => {
+const deleteStuff = (firebaseKey, uid) => new Promise((resolve, reject) => {
   axios
     .delete(`${baseURL}/items/${firebaseKey}.json`)
-    .then(() => getStuff().then(resolve))
+    .then(() => getStuff(uid).then(resolve))
     .catch(reject);
 });
 
-const updateStuff = (firebaseKey, updateObj) => new Promise((resolve, reject) => {
+const updateStuff = (firebaseKey, updateObj, uid) => new Promise((resolve, reject) => {
   axios
     .patch(`${baseURL}/items/${firebaseKey}.json`, updateObj)
-    .then(() => getStuff().then(resolve))
+    .then(() => getStuff(uid).then(resolve))
     .catch(reject);
 });
 
