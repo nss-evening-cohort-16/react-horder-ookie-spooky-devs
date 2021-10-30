@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-// import { useHistory } from 'react-router-dom';
 import { signOutUser } from '../api/auth';
 
 export default function Navigation() {
@@ -10,7 +9,6 @@ export default function Navigation() {
       <button
         type="button"
         onClick={() => history.push('/')}
-        // onClick={() => history.push('/new')}
         className="btn btn-light border border-dark"
       >
         Home
@@ -18,7 +16,6 @@ export default function Navigation() {
       <button
         type="button"
         onClick={() => history.push('/new')}
-        // onClick={() => history.push('/stuff')}
         className="btn btn-light border border-dark"
       >
         New
@@ -26,7 +23,6 @@ export default function Navigation() {
       <button
         type="button"
         onClick={() => history.push('/stuff')}
-        // onClick={() => history.push('/stuff')}
         className="btn btn-light border border-dark"
       >
         Stuff

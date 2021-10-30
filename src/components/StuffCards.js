@@ -1,14 +1,12 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { deleteStuff, getStuff } from '../api/data/stuffData';
+import { deleteStuff } from '../api/data/stuffData';
 
-export default function Card({ card }) {
-  const history = useHistory();
-
+export default function Card({ card, setCards }) {
   const handleDelete = (method) => {
     if (method === 'delete') {
-      deleteStuff(card.firebaseKey).then(() => getStuff().then(history.push('/stuff')));
+      deleteStuff(card.firebaseKey).then(setCards);
     }
   };
 
@@ -39,4 +37,5 @@ export default function Card({ card }) {
 
 Card.propTypes = {
   card: PropTypes.shape(PropTypes.obj).isRequired,
+  setCards: PropTypes.func.isRequired,
 };
