@@ -12,7 +12,7 @@ export default function Stuff() {
   return (
     <div className="d-flex flex-wrap">
       {cards.map((card) => (
-        <Card key={card.firebaseKey} card={card} />
+        <Card key={card.firebaseKey} card={card} setCards={setCards} />
       ))}
     </div>
   );
