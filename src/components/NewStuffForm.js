@@ -11,7 +11,7 @@ const initialState = {
   favoriteItem: false,
 };
 
-export default function NewStuffForm({ obj }) {
+export default function NewStuffForm({ obj, uid }) {
   const [formInput, setFormInput] = useState(initialState);
   const history = useHistory();
 
@@ -45,7 +45,7 @@ export default function NewStuffForm({ obj }) {
         history.push('/stuff');
       });
     } else {
-      createStuff(formInput).then(() => {
+      createStuff({ ...formInput, uid }).then(() => {
         resetForm();
         history.push('/stuff');
       });
@@ -89,6 +89,7 @@ export default function NewStuffForm({ obj }) {
 
 NewStuffForm.propTypes = {
   obj: PropTypes.shape(PropTypes.obj),
+  uid: PropTypes.string.isRequired,
 };
 
 NewStuffForm.defaultProps = {
