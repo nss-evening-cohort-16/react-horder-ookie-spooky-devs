@@ -5,7 +5,6 @@ import NewStuffForm from '../components/NewStuffForm';
 export default function New({ uid }) {
   return (
     <div>
-      <h1>New Stuff</h1>
       <NewStuffForm uid={uid} />
     </div>
   );
