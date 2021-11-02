@@ -54,35 +54,87 @@ export default function NewStuffForm({ obj, uid }) {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input
-          id="itemName"
-          name="itemName"
-          value={formInput.itemName}
-          onChange={handleChange}
-          required
-          placeholder="Item Name"
-        />
-        <input
-          id="itemImage"
-          name="itemImage"
-          value={formInput.itemImage}
-          onChange={handleChange}
-          required
-          placeholder="Item Image"
-        />
-        <input
-          id="itemDescription"
-          name="itemDescription"
-          value={formInput.itemDescription}
-          onChange={handleChange}
-          required
-          placeholder="Item Description"
-        />
-        <button type="submit" className="btn btn-success">
-          {obj.firebaseKey ? 'Edit' : 'Create'}
-        </button>
-      </form>
+      <div
+        className="card text-center"
+        style={{
+          background: 'white',
+          width: '60rem',
+          marginLeft: '25rem',
+          justifyContent: 'center',
+          border: '2px solid black',
+        }}
+      >
+        <h1 className="card-header" style={{ border: '2px solid black' }}>
+          New Stuff
+        </h1>
+        <div
+          className="card-body"
+          style={{ justifyContent: 'space-between', border: '2px solid black' }}
+        >
+          <h5 className="card-title">Enter some new stuff</h5>
+          <form onSubmit={handleSubmit}>
+            <input
+              style={{
+                border: '2px solid black',
+                height: '2.5rem',
+                width: '30rem',
+              }}
+              id="itemName"
+              name="itemName"
+              value={formInput.itemName}
+              onChange={handleChange}
+              required
+              placeholder="Item Name"
+            />
+            <p />
+            <input
+              style={{
+                border: '2px solid black',
+                height: '2.5rem',
+                width: '30rem',
+              }}
+              id="itemImage"
+              name="itemImage"
+              value={formInput.itemImage}
+              onChange={handleChange}
+              required
+              placeholder="Item Image"
+            />
+            <p />
+            <input
+              style={{
+                border: '2px solid black',
+                height: '2.5rem',
+                width: '30rem',
+              }}
+              id="itemDescription"
+              name="itemDescription"
+              value={formInput.itemDescription}
+              onChange={handleChange}
+              required
+              placeholder="Item Description"
+            />
+            <p />
+            <button
+              type="submit"
+              className="btn btn-info"
+              style={{
+                border: '2px solid black',
+                height: '2.5rem',
+                marginTop: '3px',
+              }}
+            >
+              {obj.firebaseKey ? 'Edit' : 'Create'}
+            </button>
+          </form>
+        </div>
+        <div
+          className="card-footer text-muted"
+          style={{ border: '2px solid black' }}
+        >
+          Enjoy your stuff
+        </div>
+      </div>
     </>
   );
 }
