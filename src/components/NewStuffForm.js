@@ -113,6 +113,12 @@ export default function NewStuffForm({ obj, uid }) {
               required
               placeholder="Item Description"
             />
+            <div className="form-check">
+              <label className="form-check-label" htmlFor="favoriteItem">
+                <input type="checkbox" className="form-check-input" id="favoriteItem" />
+                Is this a favorite Item?
+              </label>
+            </div>
             <p />
             <button
               type="submit"
