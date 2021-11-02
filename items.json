@@ -1,6 +1,6 @@
 {
   "item1" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item1",
     "itemDescription" : "Hey Wally watchers! Join the hunt for Wally in this wonderful adventure! Take the Wally challenge and go up and down the Corridors of Time, wander the Fantastic Flower Garden, witness the Mighty Fruit Fight, visit Clown Town and see many other wondrous Wonderlands! Wally and friends are hiding in every detailed scene. Full of eye-boggling extras and hours of fun, this fifth classic Wally adventure comes with a striking new cover. Wow! Amazing!",
     "itemImage" : "https://images-na.ssl-images-amazon.com/images/I/615IpbOcbvL._SX258_BO1,204,203,200_.jpg",
@@ -8,7 +8,7 @@
     "uid" : "B0ctIvi85JV55m3NtAk4oFTgoXo1"
   },
   "item10" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item10",
     "itemDescription" : "For the indoor cat who wishes he were an outdoor cat, a suction-cup hammock that will let him survey his many winged enemies at close range.",
     "itemImage" : "https://pixel.nymag.com/imgs/daily/strategist/2018/01/03/reddit/9.w540.h356.2x.jpg",
@@ -64,7 +64,7 @@
     "uid" : "Rj1spgEfxRdNYVG5FRmzK3dKVYc2"
   },
   "item18" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item18",
     "itemDescription" : "Hey, sometimes we all need a little extra shuteye, and this unique design creates the private environment necessary to take a power nap wherever you may be. Slip it on your head so the hole is in the front so you can breathe and then lay down on a flat surface and place your hands in the other two holes for optimal comfort.",
     "itemImage" : "https://imgix.bustle.com/rehost/2016/10/28/d293b332-7e19-4dbc-a9f5-5923ccc86faf.jpg?w=614&fit=max&auto=format&q=70&dpr=2",
@@ -72,7 +72,7 @@
     "uid" : "z8wuAaw70aU5AACV5I4OWHyxeyE2"
   },
   "item19" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item19",
     "itemDescription" : "Your shower is missing one thing: music. Not only does it make your shower head’s stream more relaxing and powerful, it also adds a big boost to your morning routine by giving you a chance to listen to your favorite playlist.",
     "itemImage" : "https://imgix.bustle.com/rehost/2016/11/16/3f688fdb-4709-44d6-a57f-c3f6164b913f.jpg?w=614&fit=max&auto=format&q=70&dpr=2",
@@ -96,7 +96,7 @@
     "uid" : "z8wuAaw70aU5AACV5I4OWHyxeyE2"
   },
   "item22" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item22",
     "itemDescription" : "One of the biggest reasons some men grow out their beards: warmth. Now, you don’t need an facial hair to keep your face nice and cozy — you just need this hilarious hat and mask combo.",
     "itemImage" : "https://imgix.bustle.com/rehost/2016/10/28/7f749eba-ee83-41f5-be93-f273297b8e3a.jpg?w=614&fit=max&auto=format&q=70&dpr=2",
@@ -104,7 +104,7 @@
     "uid" : "P89lYk8VFdccrUupRc0MSaUqiX62"
   },
   "item23" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item23",
     "itemDescription" : "If you’ve always found it a little annoying to try to saw homemade pizza using a typical breadknife, you need this pizza-specific set of shears.",
     "itemImage" : "https://imgix.bustle.com/rehost/2016/11/14/ab9285b4-8857-4c4f-802b-d04ab5e9ff56.jpg?w=614&fit=max&auto=format&q=70&dpr=2",
@@ -160,7 +160,7 @@
     "uid" : "Rj1spgEfxRdNYVG5FRmzK3dKVYc2"
   },
   "item30" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item30",
     "itemDescription" : "The waffles come out of the iron in the shape of a keyboard, which is perfect for any breakfast-loving nerd.",
     "itemImage" : "https://removeandreplace.com/wp-content/uploads/2013/05/keyboard-waffle-iron.jpg",
@@ -168,7 +168,7 @@
     "uid" : "B0ctIvi85JV55m3NtAk4oFTgoXo1"
   },
   "item4" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item4",
     "itemDescription" : "For the superfan who knows the Game of Thrones theme song by heart, a teeny laser-cut music box that you can wind up over and over again",
     "itemImage" : "https://pixel.nymag.com/imgs/daily/strategist/2018/01/03/reddit/2.w540.h356.2x.jpg",
