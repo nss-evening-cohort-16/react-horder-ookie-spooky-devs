@@ -15,8 +15,10 @@ export default function Edit({ uid }) {
 
   return (
     <>
-      <h1>Edit Stuff for {editItem.itemName}</h1>
-      <NewStuffForm obj={editItem} uid={uid} />
+      <div className="edit-form-page">
+        <h1>Edit Stuff for {editItem.itemName}</h1>
+        <NewStuffForm obj={editItem} uid={uid} />
+      </div>
     </>
   );
 }

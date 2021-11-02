@@ -63,9 +63,9 @@ export default function NewStuffForm({ obj, uid }) {
           border: '2px solid black',
         }}
       >
-        <h1 className="card-header" style={{ border: '2px solid black' }}>
+        <h2 className="card-header" style={{ border: '2px solid black' }}>
           New Stuff
-        </h1>
+        </h2>
         <div
           className="card-body"
           style={{ justifyContent: 'space-between', border: '2px solid black' }}

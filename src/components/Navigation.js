@@ -1,14 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import navlogo from '../assets/navlogo.jpg';
 import { signOutUser } from '../api/auth';
 
+const NavContainer = styled.div`
+  Nav {
+    border-radius: 1rem;
+    border: 2px solid black;
+  }
+`;
 export default function Navigation() {
   return (
-    <div className="container d-flex justify-content-center py-3">
+    <NavContainer className="container d-flex justify-content-center py-3">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            React Hoarder
+            <img src={navlogo} alt="logo" style={{ width: '100px' }} />
           </Link>
           <div id="navbarNav">
             <ul className="navbar-nav">
@@ -44,6 +52,6 @@ export default function Navigation() {
           </div>
         </div>
       </nav>
-    </div>
+    </NavContainer>
   );
 }

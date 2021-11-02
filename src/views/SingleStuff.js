@@ -14,8 +14,12 @@ export default function SingleStuffView() {
 
   return (
     <>
-      <h1>{editItem.itemName}</h1>
-      <SingleStuff card={editItem} />
+      <div className="single-stuff-page">
+        <h1>{editItem.itemName}</h1>
+        <div className="single-view-body">
+          <SingleStuff card={editItem} />
+        </div>
+      </div>
     </>
   );
 }
