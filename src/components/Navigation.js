@@ -1,39 +1,49 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { signOutUser } from '../api/auth';
 
 export default function Navigation() {
-  const history = useHistory();
   return (
     <div className="container d-flex justify-content-center py-3">
-      <button
-        type="button"
-        onClick={() => history.push('/')}
-        className="btn btn-light border border-dark"
-      >
-        Home
-      </button>
-      <button
-        type="button"
-        onClick={() => history.push('/new')}
-        className="btn btn-light border border-dark"
-      >
-        New
-      </button>
-      <button
-        type="button"
-        onClick={() => history.push('/stuff')}
-        className="btn btn-light border border-dark"
-      >
-        Stuff
-      </button>
-      <button
-        onClick={signOutUser}
-        type="button"
-        className="btn btn-danger border border-dark"
-      >
-        Log Out
-      </button>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
+            React Hoarder
+          </Link>
+          <div id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/new">
+                  New
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/stuff"
+                >
+                  Stuff
+                </Link>
+              </li>
+              <li className="nav-item">
+                <button
+                  onClick={signOutUser}
+                  type="button"
+                  className="btn btn-danger border border-dark"
+                >
+                  Log Out
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }
