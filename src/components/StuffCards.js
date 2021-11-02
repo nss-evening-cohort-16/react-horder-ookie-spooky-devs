@@ -14,7 +14,10 @@ export default function Card({ card, setCards, uid }) {
 
   return (
     <div>
-      <div className="card" style={{ width: '18rem', margin: '3px' }}>
+      <div
+        className="card stuff-cards"
+        style={{ width: '18rem', margin: '.5rem' }}
+      >
         <div className="card-body">
           <h3 className="card-title">{card.itemName}</h3>
           <img src={card.itemImage} className="card-img" alt="item" />
@@ -25,8 +28,8 @@ export default function Card({ card, setCards, uid }) {
             Single
           </Link>
           <button
-            onClick={() => handleDelete('delete')}
-            className="btn btn-danger"
+            onClick={() => handleDelete('Delete')}
+            className="btn btn-danger fas"
             type="button"
           >
             Delete

@@ -32,7 +32,7 @@
     "uid" : "B0ctIvi85JV55m3NtAk4oFTgoXo1"
   },
   "item14" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item14",
     "itemDescription" : "This reusable coffee mug comes with two straps: a small hand strap and a long one so you can carry it across your body if your hands are full. And the coffee holder transforms into a stand for when you get to your destination. Genius!",
     "itemImage" : "https://imgix.bustle.com/rehost/2016/10/28/8b500e37-d5ec-48d4-9e8c-fd6dbc295515.jpg?w=614&fit=max&auto=format&q=70&dpr=2",
@@ -40,7 +40,7 @@
     "uid" : "Rj1spgEfxRdNYVG5FRmzK3dKVYc2"
   },
   "item15" : {
-    "favoriteItem" : "",
+    "favoriteItem" : true,
     "firebaseKey" : "item15",
     "itemDescription" : "There are few things more annoying than having to turn the bright bathroom light on when you get up to go in the middle of the night. With this genius little toilet bowl light, you’ll be able to guide yourself to the loo without disturbing your sleep any more than necessary.",
     "itemImage" : "https://imgix.bustle.com/rehost/2016/10/28/800ce911-7261-4ddf-9c91-864af10c1ae8.jpg?w=614&fit=max&auto=format&q=70&dpr=2",

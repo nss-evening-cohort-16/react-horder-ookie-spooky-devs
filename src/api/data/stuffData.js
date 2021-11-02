@@ -47,6 +47,22 @@ const getSingleStuff = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getFavoriteStuff = (uid) => new Promise((resolve, reject) => {
+  getStuff(uid)
+    .then((favStuffArray) => {
+      const favoriteStuff = favStuffArray.filter(
+        (stuff) => stuff.favoriteItem,
+      );
+      resolve(favoriteStuff);
+    })
+    .catch(reject);
+});
+
 export {
-  getStuff, createStuff, deleteStuff, updateStuff, getSingleStuff,
+  getStuff,
+  createStuff,
+  deleteStuff,
+  updateStuff,
+  getSingleStuff,
+  getFavoriteStuff,
 };

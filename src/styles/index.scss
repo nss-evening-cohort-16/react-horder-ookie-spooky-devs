@@ -4,3 +4,16 @@
 body {
   background-color: $favColor !important;
 }
+
+.homePage{
+  display: column;
+  justify-content: center;
+  h1 {
+    text-align: center;
+    color: azure;
+  }
+}
+
+.stuff-cards{
+  background-color: blue;
+}
