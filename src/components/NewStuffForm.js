@@ -59,7 +59,6 @@ export default function NewStuffForm({ obj, uid }) {
         style={{
           background: 'white',
           width: '60rem',
-          marginLeft: '25rem',
           justifyContent: 'center',
           border: '2px solid black',
         }}

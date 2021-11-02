@@ -4,3 +4,30 @@
 body {
   background-color: $favColor !important;
 }
+
+.home-page{
+  display: column;
+  justify-content: center;
+  h1 {
+    text-align: center;
+  }
+  .home-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.stuff-cards{
+  .card-title{
+    text-align: center;
+  }
+  .button-row{
+    display: flex;
+    justify-content: center;
+    margin-top: .3rem;
+    .btn{
+      margin: .1rem;
+    }
+  }
+}

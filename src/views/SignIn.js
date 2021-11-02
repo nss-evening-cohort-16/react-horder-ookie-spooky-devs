@@ -9,7 +9,7 @@ const SignInStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 400px;
-  `;
+`;
 
 export default function SignIn() {
   return (
