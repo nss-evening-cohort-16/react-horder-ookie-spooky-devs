@@ -28,17 +28,19 @@ export default function Home({ uid }) {
   }, []);
 
   return (
-    <div className="homePage">
+    <div className="home-page">
       <h1>My Favorite Items</h1>
-      <div className="d-flex flex-wrap home-cards">
-        {cards.map((card) => (
-          <Card
-            key={card.firebaseKey}
-            card={card}
-            setCards={setCards}
-            uid={uid}
-          />
-        ))}
+      <div className="home-body">
+        <div className="home-cards">
+          {cards.map((card) => (
+            <Card
+              key={card.firebaseKey}
+              card={card}
+              setCards={setCards}
+              uid={uid}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

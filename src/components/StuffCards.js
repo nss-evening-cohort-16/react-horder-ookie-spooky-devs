@@ -21,19 +21,21 @@ export default function Card({ card, setCards, uid }) {
         <div className="card-body">
           <h3 className="card-title">{card.itemName}</h3>
           <img src={card.itemImage} className="card-img" alt="item" />
-          <Link to={`/edit/${card.firebaseKey}`} className="btn btn-warning">
-            Edit
-          </Link>
-          <Link to={`/stuff/${card.firebaseKey}`} className="btn btn-success">
-            Single
-          </Link>
-          <button
-            onClick={() => handleDelete('Delete')}
-            className="btn btn-danger fas"
-            type="button"
-          >
-            Delete
-          </button>
+          <div className="button-row">
+            <Link to={`/edit/${card.firebaseKey}`} className="btn btn-warning">
+              Edit
+            </Link>
+            <Link to={`/stuff/${card.firebaseKey}`} className="btn btn-success">
+              Single
+            </Link>
+            <button
+              onClick={() => handleDelete('Delete')}
+              className="btn btn-danger fas"
+              type="button"
+            >
+              Delete
+            </button>
+          </div>
         </div>
       </div>
     </div>
