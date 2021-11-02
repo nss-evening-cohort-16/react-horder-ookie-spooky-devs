@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import navlogo from '../assets/navlogo.jpg';
 import { signOutUser } from '../api/auth';
 
 export default function Navigation() {
@@ -8,7 +9,7 @@ export default function Navigation() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            React Hoarder
+            <img src={navlogo} alt="logo" style={{ width: '100px' }} />
           </Link>
           <div id="navbarNav">
             <ul className="navbar-nav">
