@@ -22,6 +22,7 @@ export default function SingleStuff({ card }) {
         <h3 className="card-header">{card.itemName}</h3>
         <div className="card-body">
           <img src={card.itemImage} className="card-img" alt="item" />
+          <hr />
           <p className="card-text">{card.itemDescription}</p>
           <div className="button-row">
             <button
