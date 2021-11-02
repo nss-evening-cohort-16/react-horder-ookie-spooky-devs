@@ -13,6 +13,7 @@ const initialState = {
 
 export default function NewStuffForm({ obj, uid }) {
   const [formInput, setFormInput] = useState(initialState);
+  const [checked, setChecked] = useState(false);
   const history = useHistory();
 
   useEffect(() => {
@@ -30,6 +31,10 @@ export default function NewStuffForm({ obj, uid }) {
       ...prevState,
       [name]: value,
     }));
+  };
+
+  const handleChecked = () => {
+    setChecked(!checked);
   };
 
   const resetForm = () => {
@@ -51,6 +56,8 @@ export default function NewStuffForm({ obj, uid }) {
       });
     }
   };
+
+  console.warn(checked);
 
   return (
     <>
@@ -115,7 +122,14 @@ export default function NewStuffForm({ obj, uid }) {
             />
             <div className="form-check">
               <label className="form-check-label" htmlFor="favoriteItem">
-                <input type="checkbox" className="form-check-input" id="favoriteItem" />
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="favoriteItem"
+                  checked={checked}
+                  value={formInput.favoriteItem}
+                  onChange={handleChecked}
+                />
                 Is this a favorite Item?
               </label>
             </div>
