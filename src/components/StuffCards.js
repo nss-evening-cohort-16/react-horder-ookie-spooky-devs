@@ -19,7 +19,7 @@ export default function Card({ card, setCards, uid }) {
         style={{ width: '18rem', margin: '.5rem' }}
       >
         <div className="card-body">
-          <h3 className="card-title">{card.itemName}</h3>
+          <h3 className="card-header">{card.itemName}</h3>
           <img src={card.itemImage} className="card-img" alt="item" />
           <div className="button-row">
             <Link to={`/edit/${card.firebaseKey}`} className="btn btn-warning">
@@ -30,7 +30,7 @@ export default function Card({ card, setCards, uid }) {
             </Link>
             <button
               onClick={() => handleDelete('Delete')}
-              className="btn btn-danger fas"
+              className="btn btn-danger"
               type="button"
             >
               Delete

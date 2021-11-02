@@ -8,7 +8,8 @@ body {
 .home-page{
   display: column;
   justify-content: center;
-  h1 {
+  h1{
+    color: whitesmoke;
     text-align: center;
   }
   .home-cards{
@@ -19,7 +20,7 @@ body {
 }
 
 .stuff-cards{
-  .card-title{
+  .card-header{
     text-align: center;
   }
   .button-row{
@@ -29,5 +30,42 @@ body {
     .btn{
       margin: .1rem;
     }
+  }
+}
+
+.single-stuff-page{
+  display: column;
+  justify-content: center;
+  h1{
+    color: whitesmoke;
+    text-align: center;
+  }
+  .single-view-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.single-stuff-cards{
+  .card-header{
+    text-align: center;
+  }
+  .button-row{
+    display: flex;
+    justify-content: center;
+    margin-top: .3rem;
+    .btn{
+      margin: .1rem;
+    }
+  }
+}
+
+.edit-form-page{
+  display: column;
+  justify-content: center;
+  h1{
+    color: whitesmoke;
+    text-align: center;
   }
 }
