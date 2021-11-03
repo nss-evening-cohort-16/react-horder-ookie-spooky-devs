@@ -32,6 +32,14 @@ export default function NewStuffForm({ obj, uid }) {
     }));
   };
 
+  const handleChecked = (e) => {
+    const { name, checked } = e.target;
+    setFormInput((prevState) => ({
+      ...prevState,
+      [name]: checked,
+    }));
+  };
+
   const resetForm = () => {
     setFormInput(initialState);
   };
@@ -115,7 +123,14 @@ export default function NewStuffForm({ obj, uid }) {
             />
             <div className="form-check">
               <label className="form-check-label" htmlFor="favoriteItem">
-                <input type="checkbox" className="form-check-input" id="favoriteItem" />
+                <input
+                  name="favoriteItem"
+                  type="checkbox"
+                  className="form-check-input"
+                  id="favoriteItem"
+                  checked={formInput.favoriteItem}
+                  onChange={handleChecked}
+                />
                 Is this a favorite Item?
               </label>
             </div>
